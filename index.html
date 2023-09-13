@@ -1,0 +1,25 @@
+<h1>Difference between the RxJs operators:</h1>
+<span>ps: don't forget to open the console to see results</span>
+<ul>
+  <li>ZIP</li>
+  <li>forkedJoin</li>
+  <li>combineLatest</li>
+  <li>withLatestFrom</li>
+</ul>
+
+<article>
+  <strong>1. ZIP</strong> Each time the zipped observables (or subjects) emit all of their values, 
+  the ZIP operator emits one time an array of all observables values.
+</article>
+
+<article>
+  <strong>2. forkedJoin</strong> emits an array of the last values emited by the observables (or the subjects) being forkJoined only after completing the stream of the observables (or the subjects).
+</article>
+
+<article>
+  <strong>3. combineLatest</strong> each time an observable (or a subject) emits a new value the combineLatest operator emits a new array of values (from all the observables passed to the combineLatest operator) containing the new value.
+</article>
+
+<article>
+  <strong>4. withLatestFrom</strong> emits an array of both values, the main observable value, and the other observable last value being withLatestFromed.
+</article>

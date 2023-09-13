@@ -1,0 +1,20 @@
+body {
+  font-family: Lato;
+  background-color: lightgray;
+}
+
+span {
+  padding: 5px;
+  color: white;
+  background-color: orangered;
+  border-radius: 10px;
+}
+
+article {
+  width: 500px;
+  padding: 20px;
+}
+
+strong {
+  background-color: yellow;
+}
